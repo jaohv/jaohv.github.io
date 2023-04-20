@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carousel.css">
+</head>
+
+<body>
+    <header>
+        <h1>Melhores receitas de comida</h1>
+    </header>
+    <div class="conteudo">
+        <div class="receita">
+            <h2>Pipoca doce com açúcar mascavo</h2>
+            <div class="carousel">
+                <button class="carousel-btn" id="carousel-btn-left">&lt;</button>
+                <p id="1" style="display:block;">
+                    1 e 1/2 colher de sopa de óleo
+                    <br>
+                    5 colheres de sopa de milho de pipoca
+                    <br>
+                    4 colheres de sopa de açúcar mascavo
+                </p>
+                <p id="2" style="display:block;">
+                    Em uma panela, coloque o óleo, o milho e assim que começar a estourar, tampe e deixe terminar de
+                    estourar.
+                    <br>
+                    Desligue o fogo, adicione o açúcar e misture bem.
+                    <br>
+                    Volte a panela para o fogo alto e mexa sem parar, mas com cuidado para não quebrar as pipocas.
+                    <br>
+                    Assim que o açúcar derreter bem, transfira para uma vasilha e já pode servir.
+                </p>
+                <button class="carousel-btn" id="carousel-btn-right">&gt;</button>
+            </div>
+        </div>
+        <div class="receita">
+            <h2>PIPOCA</h2>
+        </div>
+        <div class="receita">
+            <h2>PIPOCA</h2>
+        </div>
+    </div>
+
+    <script>
+        const btnLeft = document.getElementById('carousel-btn-left');
+        const btnRight = document.getElementById('carousel-btn-right');
+        const paragraph1 = document.getElementById('1');
+        const paragraph2 = document.getElementById('2');
+        let currentParagraph = 1;
+
+        btnLeft.addEventListener('click', () => {
+            if (currentParagraph === 2) {
+                currentParagraph = 1;
+                paragraph1.style.display = 'block';
+                paragraph2.style.display = 'none';
+            }
+        });
+        btnRight.addEventListener('click', () => {
+            if (currentParagraph === 1) {
+                currentParagraph = 2;
+                paragraph1.style.display = 'none';
+                paragraph2.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+
+</html>
