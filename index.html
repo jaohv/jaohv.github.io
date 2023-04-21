@@ -17,16 +17,15 @@
     <div class="conteudo">
         <div class="receita">
             <h2>Pipoca doce com açúcar mascavo</h2>
-            <div class="carousel">
-                <button class="carousel-btn" id="carousel-btn-left">&lt;</button>
-                <p id="1" style="display:block;">
+            <div class="conteudo-receita">
+                <p id="1">
                     1 e 1/2 colher de sopa de óleo
                     <br>
                     5 colheres de sopa de milho de pipoca
                     <br>
                     4 colheres de sopa de açúcar mascavo
                 </p>
-                <p id="2" style="display:block;">
+                <p id="2">
                     Em uma panela, coloque o óleo, o milho e assim que começar a estourar, tampe e deixe terminar de
                     estourar.
                     <br>
@@ -36,39 +35,57 @@
                     <br>
                     Assim que o açúcar derreter bem, transfira para uma vasilha e já pode servir.
                 </p>
-                <button class="carousel-btn" id="carousel-btn-right">&gt;</button>
             </div>
         </div>
         <div class="receita">
-            <h2>PIPOCA</h2>
+            <h2>Crepioca</h2>
+            <div class="conteudo-receita">
+                <p id="1">
+                    1 ovo
+                    <br>
+                    2 colheres (de sopa) de goma de tapioca
+                    <br>
+                    Uma pitada de sal
+                </p>
+                <p id="2">
+                    Em um recipiente, bata bem o ovo e adicione a goma de tapioca, bata novamente até obter uma mistura homogênea.
+                    <br>
+                    Esquente uma frigideira antiaderente e coloque toda a mistura
+                    <br>
+                    Deixe cozinhar alguns segundos e vire, deixe por mais um tempinho para dourar o outro lado.
+                    <br>
+                    Agora é só rechear e fechar.
+                </p>
+            </div>
         </div>
         <div class="receita">
-            <h2>PIPOCA</h2>
+            <h2>Macarrão à carbonara</h2>
+            <div class="conteudo-receita">
+                <p id="1">
+                    500 g de macarrão de sua preferência
+                    <br>
+                    250 g de bacon
+                    <br>
+                    1 caixa ou lata de creme de leite
+                    <br>
+                    50 g de queijo ralado
+                    <br>
+                    2 ovos
+                    <br>
+                    Sal a gosto
+                </p>
+                <p id="2">
+                    Derreta 4 colheres de sopa de margarina em uma frigideira e frite as batatas por 5 minutos ou até dourar;
+                    <br>
+                    Esquente uma frigideira antiaderente e coloque toda a mistura
+                    <br>
+                    Deixe cozinhar alguns segundos e vire, deixe por mais um tempinho para dourar o outro lado.
+                    <br>
+                    Agora é só rechear e fechar.
+                </p>
+            </div>
         </div>
     </div>
-
-    <script>
-        const btnLeft = document.getElementById('carousel-btn-left');
-        const btnRight = document.getElementById('carousel-btn-right');
-        const paragraph1 = document.getElementById('1');
-        const paragraph2 = document.getElementById('2');
-        let currentParagraph = 1;
-
-        btnLeft.addEventListener('click', () => {
-            if (currentParagraph === 2) {
-                currentParagraph = 1;
-                paragraph1.style.display = 'block';
-                paragraph2.style.display = 'none';
-            }
-        });
-        btnRight.addEventListener('click', () => {
-            if (currentParagraph === 1) {
-                currentParagraph = 2;
-                paragraph1.style.display = 'none';
-                paragraph2.style.display = 'block';
-            }
-        });
-    </script>
 </body>
 
 </html>

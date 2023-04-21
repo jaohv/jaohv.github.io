@@ -43,4 +43,12 @@ h1 {
 
 h2 {
     color: white;
+    margin-bottom: 50px;
+}
+
+.conteudo-receita {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
 }
